@@ -30,17 +30,31 @@
 				</li>
 			</ul>
 			<div class="d-lg-flex">
-				<a href="https://swayam.jio.com/alumni/" class="btn btn-white-outline my-xxl-0 my-xl-0 my-lg-0 my-4" target="_blank">Ex-Employee Verification</a>
+				<!-- <a href="https://swayam.jio.com/alumni/" class="" target="_blank">Ex-Employee Verification</a> -->
+				<div class="dropdown">
+					<button class="btn btn-white-outline my-xxl-0 my-xl-0 my-lg-0 my-4" type="button"
+						id="alumniDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+						Alumni Corner
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="alumniDropdown">
+						<li><a class="dropdown-item" href="https://swayam.jio.com/alumni/">Alumni Verification</a></li>
+						<li><a class="dropdown-item" href="https://swayam.jio.com/qms/">Alumni Assistance</a></li>
+						<li><a class="dropdown-item" href="https://ess.jio.com/alumni">Alumni Portal</a></li>
+					</ul>
+				</div>
+
 				<a href="offer.html" class="btn btn-white-outline mx-lg-3">Validate Your Offer</a>
 			</div>
 		</div>
 		<div class="d-flex justify-content-end">
-			<button type="button" class="btn btn-login-fill" data-bs-toggle="modal" data-bs-target="#login-modal">Login & Apply</button>
+			<button type="button" class="btn btn-login-fill" data-bs-toggle="modal" data-bs-target="#login-modal">Login
+				& Apply</button>
 			<div class="dropdown">
-				<button class="btn btn-user dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+				<button class="btn btn-user dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown"
+					aria-expanded="false">
 					<img src="img/user.png" alt="">
 				</button>
-				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
 					<li><a class="dropdown-item" href="#">Profile</a></li>
 					<li><a class="dropdown-item" href="#">Change Password</a></li>
 					<li><a class="dropdown-item" href="#">Logout</a></li>
@@ -51,25 +65,25 @@
 </nav>
 
 <script>
-	$(document).ready(function(){
+	$(document).ready(function () {
 		$('.hamburger').click(function () {
 			$(this).toggleClass("active");
 		});
 	});
 
-    $(document).ready(function() {
-        var currentURL = window.location.href;
+	$(document).ready(function () {
+		var currentURL = window.location.href;
 
-        $('.navbar-nav a').each(function() {
-            var linkHref = $(this).attr('href');
+		$('.navbar-nav a').each(function () {
+			var linkHref = $(this).attr('href');
 
-            if (currentURL.includes(linkHref)) {
-                $(this).addClass('active');
+			if (currentURL.includes(linkHref)) {
+				$(this).addClass('active');
 
-                if ($(this).hasClass('dropdown-item')) {
-                    $(this).closest('.nav-item').find('.nav-link').addClass('active');
-                }
-            }
-        });
-    });
+				if ($(this).hasClass('dropdown-item')) {
+					$(this).closest('.nav-item').find('.nav-link').addClass('active');
+				}
+			}
+		});
+	});
 </script>
