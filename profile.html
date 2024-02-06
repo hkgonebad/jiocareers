@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Jio Careers</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:title" content="" />
+	<meta property="og:type" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<!--Preloader start here-->
+	<div id="pre-load">
+		<div id="loader" class="loader">
+			<div class="loader-container">
+				<div class="loader-icon"><img src="img/loader-icon.png"></div>
+			</div>
+		</div>              
+	</div>
+
+	<!-- Header content -->
+	<header class="header"></header>
+
+	<!-- Main Content -->
+	<main class="profile-bg">
+		<!-- Page Banner -->
+		<section class="page-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<div class="breadcrumb-menu">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Candidate Profile</li>
+								</ol>
+							</nav>
+						</div>
+						<h3>Candidate Profile</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Porfile -->
+		<section class="section profile">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<h3>Create Profile</h3>
+						<p>Provide your details to setup your account</p>
+					</div>
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-6 mb-4">
+								<div class="input-group">
+									<input type="email" class="form-control" placeholder="Email">
+									<span class="input-group-text">
+										<img src="img/email-icon.png" alt="">
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 mb-4">
+								<div class="input-group">
+									<input type="password" class="form-control" placeholder="Password">
+									<span class="input-group-text">
+										<img src="img/pass-icon.png" alt="">
+									</span>
+								</div>
+							</div>
+							<div class="col-lg-6 mb-4">
+								<div class="input-group">
+									<input type="password" class="form-control" placeholder="Confirm Password">
+									<span class="input-group-text">
+										<img src="img/pass-icon.png" alt="">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<h3>About you</h3>
+						<p>Provide your personal informations</p>
+					</div>
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-6 mb-4">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="First Name">
+								</div>
+							</div>
+							<div class="col-lg-6 mb-4">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Last Name">
+								</div>
+							</div>
+							<div class="col-lg-6 mb-4">
+								<div class="input-group">
+									<input id="datepicker" placeholder="dd/mm/yyyy">
+								</div>
+							</div>
+							<div class="col-lg-6 mb-4">
+								<div class="input-group">
+									<select class="form-select form-control">
+										<option selected>Choose...</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-12 mb-4">
+								<div class="input-group">
+									<button class="btn dropdown-toggle pe-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">+91</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">+91</a></li>
+										<li><a class="dropdown-item" href="#">+91</a></li>
+										<li><a class="dropdown-item" href="#">+91</a></li>
+									</ul>
+									<input type="text" class="form-control" aria-label="Text input with dropdown button">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="5wu7OZG">
+									<span class="input-group-text">
+										<img src="img/captcha.png" alt="">
+									</span>
+									<button class="btn btn-outline-secondary" type="button">
+										<img src="img/refrash.png" alt="">
+									</button>
+								</div>
+							</div>
+							<div class="col-lg-6 text-end">
+								<a href="#!" class="btn btn-login-fill btn-lg px-4" data-bs-toggle="modal" data-bs-target="#privacy">Confirm</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer content -->
+	<footer class="footer"></footer>
+
+	
+	<!-- Modal -->
+	<div class="modal login fade" id="login-modal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<i class="far fa-times-circle"></i>
+					</button>
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="user-login-tab" data-bs-toggle="tab" data-bs-target="#user-login" type="button" role="tab" aria-controls="user-login" aria-selected="true">User Login</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="partner-login-tab" data-bs-toggle="tab" data-bs-target="#partner-login" type="button" role="tab" aria-controls="partner-login" aria-selected="false">Partner Login</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="user-login" role="tabpanel" aria-labelledby="user-login-tab">
+							<div class="row">
+								<div class="col-12 mb-4">
+									<div class="input-group">
+										<input type="email" class="form-control" placeholder="Email">
+										<span class="input-group-text">
+											<img src="img/email-icon.png" alt="">
+										</span>
+									</div>
+								</div> 
+								<div class="col-12">
+									<div class="input-group">
+										<input type="password" class="form-control" placeholder="Password">
+										<span class="input-group-text">
+											<img src="img/pass-icon.png" alt="">
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="row d-flex align-items-center mt-3">
+								<div class="col-lg-4">
+									<a href="#!" class="forgot">Forgot Password?</a>
+								</div>
+								<div class="col-lg-8 text-end">
+									<div class="row">
+										<div class="col-6 d-grid">
+											<a href="profile.html" class="btn btn-white-outline px-4">New User?</a>
+										</div>
+										<div class="col-6 d-grid">
+											<a href="index.html" class="btn btn-login-fill px-4">Log In</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12 mt-5">
+									<a href="#!" class="google-sign">Or Sign in with <img src="img/google-icon.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="partner-login" role="tabpanel" aria-labelledby="partner-login-tab">
+							<div class="row">
+								<div class="col-12 mb-4">
+									<div class="input-group">
+										<input type="email" class="form-control" placeholder="Email">
+										<span class="input-group-text">
+											<img src="img/email-icon.png" alt="">
+										</span>
+									</div>
+								</div> 
+								<div class="col-12">
+									<div class="input-group">
+										<input type="password" class="form-control" placeholder="Password">
+										<span class="input-group-text">
+											<img src="img/pass-icon.png" alt="">
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="row d-flex align-items-center mt-3">
+								<div class="col-lg-4">
+									<a href="#!" class="forgot">Forgot Password?</a>
+								</div>
+								<div class="col-lg-8 text-end">
+									<div class="row">
+										<div class="col-6 d-grid">
+											<a href="profile.html" class="btn btn-white-outline px-4">New User?</a>
+										</div>
+										<div class="col-6 d-grid">
+											<a href="index.html" class="btn btn-login-fill px-4">Log In</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script> -->
+	<script src="js/vendor/jquery-3.6.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+	<script src="js/jiomain.js"></script>
+</body>
+
+</html>
